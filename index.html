@@ -4,17 +4,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
+ 
+
 <!-------------NAVBAR-------------------->
-
-
 <script>function scrollValue() {
   var navbar = document.getElementById('navbar');
   var scroll = window.scrollY;
-  if (scroll <= 200) {
+  if (scroll <= 70) {
       navbar.classList.remove('BgColour');
-  } else if (scroll >220){
+  } else if (scroll >100){
       navbar.classList.add('BgColour');
   }
 }
@@ -40,231 +42,239 @@ window.addEventListener('scroll', scrollValue);
 
 <!---------------HOMEPAGE---------------------->
 
-<div id="home-section">
+<div id="home-section" data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">
     <div class="container">
         <div class="head">
-          
-            <br><br><br><br>
+           <br><br><br><br>
            <h2><p style="color: #070a17;">HEY !! I'M</p></h6> 
            <span style="color: #451233;" style="font-style: 'Dancing Script', cursive;;"><center>Shravani Sawant</center></span>
                  <h1 aria-label="Hi! I'm a developer" style=" text-align: center;">
                 <span style="color: #7a8ede;">I'm a</span>&nbsp;<span class="typewriter"></span>
               </h1>
-            
-          </div>
+        </div>
     </div>
-    
 </div>
 </div>
 <br><br><br><br><br><br><br><br><br><br><br>
 
+
+
+
+
 <!---------------ABOUT---------------------->
-
-<!-- <div id="about-section">
-  <div class="container">
-    <div class="box1">
-      <div class="about">
-         <span style="margin-left: 45%;"><h4>About</h4></span>           
-         
-      </div>
-
-  </div> -->
-  <div id="about-section">
-  <div class="box2">
-  
-      <h2><center >About</center></h2>
+<div id="about-section" >
+  <div class="box2"  style="background-color: white" >
+      <h2><center  data-aos="fade-up" data-aos-duration="1000" data-aos-once="true">About</center></h2>
       <div class="grid-container">
-        <div class="grid-item">
+        <div class="grid-item"  data-aos="fade-right" data-aos-duration="1000" data-aos-once="true">
           <img src="img/shravani3.jpeg" alt="">
         </div>
-        <div class="grid-item2">Hey, I'm Shravani, a tech enthusiast and freelancer, currently pursuing BE in Computer Engineering.A self-motivated tech aspirant with over 3+ years of experience in programming.
+        <div class="grid-item2" data-aos="fade-left" data-aos-duration="1000" data-aos-once="true"><p>Hey, I'm Shravani, a tech enthusiast and freelancer, currently pursuing BE in Computer Engineering.A self-motivated tech aspirant with over 3+ years of experience in programming.
           <br/><br>
-          With the aim of seeking a career in Web developement, I am proficiennt in HTML,CSS and JavaScript along with the reknown libraries like ReactJs. Other than Web Developement, I am familiar with other programming languages like C,Python and worked with databases like MySQL.Also familiar with Data Structures and Algorithms,Operating systems like Windows and Linux.
+          With the aim of seeking a career in Web developement, I am proficiennt in HTML,CSS and JavaScript along with the reknown libraries like ReactJs. Other than Web Developement, I am familiar with other programming languages like
+          C,Python and worked with databases like MySQL.Also familiar with Data Structures and Algorithms,Operating systems like Windows and Linux.
           <br/><br>
-          A free-minded, passionate, adaptive person who likes to stay updated with emerging technologies.
+          My primary goal is collaborating with a dynamic team, tackling complex projects, and continuously enhancing my skills to deliver user-friendly web solutions
+          A free-minded, passionate, adaptive person who likes to stay updated with emerging technologies.</p>
           </div>
         </div>
-   
-  <div class="box3">
-    <div id="resume-section">
-      
-      <p>Resume</p>
-<!-- <div class="grid-container1">
+   </div>
+</div>
 
-      <div class="grid-item1">
-          <div class="progress-bar-container">
-            <h3>
-              <label for="html">HTML</label>
-            </h2>
-            <div class="progress-bar html">
-              <progress id="html" min="0" max="100" value="92"></progress>
-            </div>
-          </div>
+<!-- skills -->
+<div class="box3" style="max-height: 200px;">
+  <div id="skills">
+    <div class="container">
+        <div class="heading">
+            <h1 style="text-align: center;">Skills</h1>
         </div>
-
-          <div class="grid-item1">
-            <div class="progress-bar-container">
-              <h3>
-                <label for="css">CSS</label>
-              </h2>
-              <div class="progress-bar css">
-                <progress id="css" min="0" max="100" value="87"></progress>
-              </div>
-            </div>
-          </div>
-      </div>
-
-          <div class="grid-item1">
-            <div class="progress-bar-container">
-              <h3>
-                <label for="js">JavaScript</label>
-              </h2>
-              <div class="progress-bar js">
-                <progress id="js" min="0" max="100" value="73"></progress>
-              </div>
-            </div>
-          </div>
-          <div class="grid-item1">
-            <div class="progress-bar-container">
-              <h3>
-                <label for="js">JavaScript</label>
-              </h2>
-              <div class="progress-bar js">
-                <progress id="js" min="0" max="100" value="73"></progress>
-              </div>
-            </div>
-          </div>
-    </div> -->
-    <style media="screen">
-      @import url(http://fonts.googleapis.com/css?family=Roboto:400,700,300);
-    
-    .circle-wrap {
-      margin: 150px auto;
-      width: 150px;
-      height: 150px;
-      background: #fefcff;
-      border-radius: 50%;
-      border: 1px solid #cdcbd0;
-    }
-    
-    .circle-wrap .circle .mask,
-    .circle-wrap .circle .fill {
-      width: 150px;
-      height: 150px;
-      position: absolute;
-      border-radius: 50%;
-    }
-    
-    .circle-wrap .circle .mask {
-      clip: rect(0px, 150px, 150px, 75px);
-    }
-    
-    .circle-wrap .inside-circle {
-      width: 122px;
-      height: 122px;
-      border-radius: 50%;
-      background: #d2eaf1;
-      line-height: 120px;
-      text-align: center;
-      margin-top: 14px;
-      margin-left: 14px;
-      color: #1e51dc;
-      position: absolute;
-      z-index: 100;
-      font-weight: 700;
-      font-size: 2em;
-    }
-    
-    /* color animation */
-    
-    /* 3rd progress bar */
-    .mask .fill {
-      clip: rect(0px, 75px, 150px, 0px);
-      background-color: #227ded;
-    }
-    
-    .mask.full,
-    .circle .fill {
-      animation: fill ease-in-out 3s;
-      transform: rotate(135deg);
-    }
-    
-    @keyframes fill{
-      0% {
-        transform: rotate(0deg);
-      }
-      100% {
-        transform: rotate(135deg);
-      }
-    }
-    
-    
-    </style>
-    </head>
-    <body>
-    <div class="grid-container">
-      <div class="grid-item">
-        <div class="circle-wrap">
-          <div class="circle">
-            <div class="mask full">
-              <div class="fill"></div>
-            </div>
-            <div class="mask half">
-              <div class="fill"></div>
-            </div>
-            <div class="inside-circle"> 75% </div>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-item">
-        <div class="circle-wrap">
-          <div class="circle">
-            <div class="mask full">
-              <div class="fill"></div>
-            </div>
-            <div class="mask half">
-              <div class="fill"></div>
-            </div>
-            <div class="inside-circle"> 75% </div>
-            
-          </div>
-        </div>
-      </div>
-
-      <div class="grid-item">
-        <div class="circle-wrap">
-          <div class="circle">
-            <div class="mask full">
-              <div class="fill"></div>
-            </div>
-            <div class="mask half">
-              <div class="fill"></div>
-            </div>
-            <div class="inside-circle"> 75% </div>
-            
-          </div>
-        </div>
-      </div>
-    </div>
-    
+        <div class="skills-list">
          
-    
-    
-      </body>
-    </html>
-
-   
-      <div class="pimg1">err</div>
-      <div class="pimg2">thbdf</div>
-      <div class="pimg3">rdtfyguhij</div>
+            <a href="https://en.wikipedia.org/wiki/HTML5"><img src="img/html5.jpg" alt="html"></a>
+            <a href="https://en.wikipedia.org/wiki/CSS"><img src="img/css3.jpg" alt="css"></a>
+            <a href="https://en.wikipedia.org/wiki/JavaScript"><img src="img/js.jpg" alt="js.png"></a>
+            <a href="https://en.wikipedia.org/wiki/C_(programming_language)"><img src="img/c.jpg" alt="c"></a>
+            <a href="https://en.wikipedia.org/wiki/Python_(programming_language)"><img src="img/python.jpg" alt="css3.png"></a>
+            <a href="https://en.wikipedia.org/wiki/SQL"><img src="img/sql.jpg" alt="mysql"></a>
+            <a href="https://en.wikipedia.org/wiki/Git"><img src="img/git2.jpg" alt="git.png"></a>
+            <a href="https://en.wikipedia.org/wiki/GitHub"><img src="img/github.jpg" alt="github.png"></a>
+            <a href="https://en.wikipedia.org/wiki/Linux"><img src="img/linux.jpg" alt="linux"></a>
+            <a href="https://en.wikipedia.org/wiki/Amazon_Web_Services"><img src="img/aws2.jpg" alt="aws"></a>
+        </div>
     </div>
+</div>
 
 
+<!-- resume -->
+<div class="box3" style="background-color: #c8cad7;">
+  <div id="resume-section" >
+    <div class="Main">
+      <section class="Main-section">
+        <div class="Container">
+          <div class="js-timeline ag-timeline">
+        
+    
+    
+    
+    
+    
+            
+            <!-- Progress Bar Line Code-->
+            <div class="js-timeline_line ag-timeline_line">
+              <div class="js-timeline_line-progress ag-timeline_line-progress"></div>
+            </div>
+        
+            <div class="ag-timeline_list">
+        
+             <!-- Left Batman Box -->
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <!-- Number Code-->
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">01</div>
+                  </div>
+            
+                  <!-- Name Code-->
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">SSC</div>
+                  </div>
+                </div>
+          
+                <!-- Image Code-->
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                     <p>fg</p>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+    
+                </div>
+              </div>
+    
+               <!-- Right Deathstroke Box -->
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <!-- Name Code-->
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">HSC</div>
+                  </div>
+            
+                  <!-- Number Code-->
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">02</div>
+                  </div>
+                </div>
+          
+                <!-- Image Code-->
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <p>fg</p>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+    
+              <!-- Left Iron Man Box -->
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <!-- Number Code-->
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">03</div>
+                  </div>
+    
+                  <!-- Name Code-->
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">BE in CS</div>
+                  </div>
+                </div>
+          
+                <!-- Image Code-->
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <p>fg</p>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+    
+              <!-- Right Green Lantern Box -->
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <!-- Name Code-->
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Green Lantern</div>
+                  </div>
+            
+                  <!-- Number Code-->
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">04</div>
+                  </div>
+                </div>
+          
+                <!-- Image Code-->
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <p>fg</p>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+    
+              <!-- Left Nightwing Box -->
+              <div class="js-timeline_item ag-timeline_item">
+                <div class="ag-timeline-card_box">
+                  <!-- Number Code-->
+                  <div class="js-timeline-card_point-box ag-timeline-card_point-box">
+                    <div class="ag-timeline-card_point">05</div>
+                  </div>
+            
+                  <!-- Name Code-->
+                  <div class="ag-timeline-card_meta-box">
+                    <div class="ag-timeline-card_meta">Nightwing</div>
+                  </div>
+                </div>
+          
+                <!-- Image Code-->
+                <div class="ag-timeline-card_item">
+                  <div class="ag-timeline-card_inner">
+                    <div class="ag-timeline-card_img-box">
+                      <p>fg</p>
+                    </div>
+                  </div>
+                  <div class="ag-timeline-card_arrow"></div>
+                </div>
+              </div>
+    
+            </div>
+    
+    
+    
+          </div>
+        </div>
+      </section>
     </div>
     
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.1/jquery.min.js'></script>
+    <script  src="./script.js"></script>
     
+
+    <!---------------Skills ------------------->
+    
+
+
+
+
+
+
+<!----------------- projects -------------------->
+<!--     
     <div class="box4">
       <p>Projects</p>
       <div class="grid-container">
@@ -353,16 +363,60 @@ window.addEventListener('scroll', scrollValue);
             </div>
           </div>
         </div>
-      </div>
-      <div class="box5">
-        <div id="resume">
+      </div> -->
     
-        </div> 
-      
-    </div>
   </div>
+  <div class="box5" >
+        <div class="container1">
+            <div class="row">
+              <div class="column" style="border-right: 2px solid gray;" >
+                <div class="vl"></div>
+                    <h2 style="color: #e8c112;">Contact me</h2><br>
+                    <p style="font-size: 20px;">Feel free to get in touch with me. I am always open to discuss new 
+                      technologies,projects,creative ideas or opportunities to be a part of your vision. Let's contribute together!!!
+                    </p><br>
+                    <p style="font-size: 20px;"><a href=""><i class="fa fa-envelope"></i></a>: <a href="www.gmail.com">sawantshravani03@gmail.com</a></p>
+                    <br>
+                    <button ><a href="/resume.pdf" download="" style="color: black;">DOWNLOAD CV</a></button>
+                    <br> <br> 
+                <div class="icons" >
+                    <a href="https://twitter.com/shravani0507"><i class="fa fa-twitter"></i></a>
+                    <a href="https://www.instagram.com/shravaniii.05/"><i class="fa fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/shravanisawant/"><i class="fa fa-linkedin"></i></a>
+                    <a href="https://github.com/shravani-05"><i class="fa fa-github"></i></a>
+               </div>
+              </div>
+              <div class="column" style="text-align: left;">
+                <form action="index.html">
+                  <br>
+                  <label for="fname"></label>
+                  <input type="text" id="fname" name="firstname" placeholder="Your name"><br>
+                  <label for="email"></label>
+                  <input type="text" id="email" name="email" placeholder="Email"><br>
+                  <label for="subject"></label>
+                  <textarea id="subject" name="subject" placeholder="Any message  " style="height:100px"></textarea><br>
+                  <input type="submit" value="Submit">
+                </form>
+              </div>
+            </div>
+          </div>
+      </div>
+          
+    </div> 
+  
+    <div class="reserverights" style="font-size: 10px;">
+      <center><p style="font-size: 18px;">Copyright © 2022 Shravani Sawant, All rights reversed.</p></center>
+    </div>
 </div>
-
+</div>
+ <!-- aos -->
+ <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 3000,
+        once: true,
+      });
+    </script>
 
 
 
