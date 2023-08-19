@@ -10,24 +10,14 @@ body{
   margin: 0;
   font-size: 28px;
   font-family: 'Times New Roman', Times, serif; 
-  background-image: url('img/bg2img.jpg');;
+  background-image: url('img/imageedit_2_8444518671.png');;
   /* background-image: url('https://images.unsplash.com/photo-1573495783026-9a628c32fb3e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1169&q=80'); */
     background-repeat: no-repeat;
     background-size: cover ;
     background-attachment: fixed;
 
   }
- 
-/* #header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 50%;
-  height: 100%;
-  background-color: #e2e4ec;
-} */
-
-/* <!-------------NAVBAR--------------------> */
+ /* <!-------------NAVBAR--------------------> */
 * {
   margin: 0;
   padding: 0;
@@ -186,10 +176,6 @@ h1 {
     animation: sequencePopup 12s linear infinite;
   }
 }
-/* arrow */
-
-
-
 .box1, .box2, .box4{
   height: 100vh;
   width: 100%;
@@ -216,8 +202,6 @@ h1 {
     margin: 0px;
   vertical-align: middle;
 }
-
-
 /* aboutsection  box2 */
 img{
   height: 70vh;
@@ -239,7 +223,7 @@ img{
   
 }
 .box2 p{
-  color: antiquewhite;
+  color: rgb(241, 139, 5);
 }
 .grid-container {
   display: grid;
@@ -263,9 +247,6 @@ img{
  max-width: 90%;
  font-family: 'Times New Roman', Times, serif;
 }
-
-
-
 /* skillsSection */
 #skills{
   
@@ -309,11 +290,9 @@ box-shadow: 0px 0px 6px 7px rgb(116, 110, 110);
 transform: scale(1.1,1.1);
 transition: all .4s ease-out;
 }
-
-
 /* resumesection box3*/
 .Main {
-	padding-top: 280px;
+	padding-top: 200px;
 	padding-bottom: 200px;
 }
 .TopTitle {
@@ -332,6 +311,7 @@ transition: all .4s ease-out;
 .ag-timeline_item {
 	margin: 0 0 100px;
 	position: relative;
+  overflow: hidden;
 }
 .ag-timeline_item:nth-child(2n) {
 	text-align: right;
@@ -361,7 +341,7 @@ transition: all .4s ease-out;
 .ag-timeline_line-progress {
 	width: 100%;
 	height: 20%;
-	background-color: #03a9f4;
+	background-color: #f5dd09;
 }
 
 .ag-timeline-card_box {
@@ -385,7 +365,7 @@ transition: all .4s ease-out;
 	height: 50px;
 	line-height: 50px;
 	width: 50px;
-	border: 3px solid #03a9f4;
+	border: 3px solid #f5dd09;
 	background-color: #1d1d1b;
 	text-align: center;
 	font-family: 'ESL Legend', sans-serif;
@@ -398,7 +378,7 @@ transition: all .4s ease-out;
 
 .js-ag-active .ag-timeline-card_point {
 	color: #1d1d1b;
-	background-color: #03a9f4;
+	background-color: #f5dd09;
 }
 
 .ag-timeline-card_meta-box {
@@ -462,13 +442,13 @@ transition: all .4s ease-out;
 .ag-timeline-card_arrow {
 	height: 18px;
 	width: 18px;
-	margin-top: 20px;
+	margin-top: 8px;
 	background-color: #03a9f4;
-	z-index: -1;
+	-index: -1;
 	position: absolute;
 	top: 0;
 	right: 0;
-	-webkit-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
 	-moz-transform: rotate(45deg);
 	-ms-transform: rotate(45deg);
 	-o-transform: rotate(45deg);
@@ -571,120 +551,106 @@ transition: all .4s ease-out;
   }
 }
 
+  /* projects */
+  body { font-family: sans-serif; }
 
-
-
-
-
-
-/* 
-.about span{
-   font-size: 40px;
-  
-  color: rgba(245, 151, 0, 0.916);
-  text-align: center;
-  font-family: "Dancing script,cursive";
-
-}
-.grid-container {
-  display: grid;
-  grid-template-columns: auto auto auto;
-  
-}
-.grid-item {
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  align-items: center;
-  margin-left: 100px;
-  margin-top: 50px ;
-
-}
-.grid-item2{
-  font-size: 20px;
-  margin: 13% 5%;
-  margin-left: 20%;
-  margin-right: 10%;
-  color: rgb(3, 3, 3);
-  text-align: justify;
-  text-justify: inter-word;
- max-width: 90%;
- font-family: "Montserrat Medium";
-
-} */
-
-
-
-/* skillsssection */
-.card {
-  color: white;
-  float: left;
-  width: calc(25% - 20px);
-  padding: 10px;
-  border-radius: 10px;
-  margin: 10px;
-  height: 200px;
-}
-.card p {
-  font-size: 18px;
-}
-.cardContainer:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-@media screen and (max-width: 600px) {
-  .card {
-     width: 100%;
+  .scene {
+    display: inline-block;
+    width: 200px;
+    height: 260px;
+  /*   border: 1px solid #CCC; */
+    margin: 40px 0;
+    perspective: 600px;
   }
-}
+  
+  .card {
+    position: relative;
+    width: 150%;
+    height: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transform-origin: center right;
+    transition: transform 1s;
+    margin-left: 25%;
 
+  }
+  .scene--card{
+    padding-left: 20px;
+    margin: 50px;
+    
+  }
+  .card.is-flipped {
+    transform: translateX(-100%) rotateY(-180deg);
+  }
+  
+  .card__face {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 260px;
+    color: white;
+    text-align: center;
+    font-weight: bold;
+    font-size: 40px;
+    backface-visibility: hidden;
+   
+  }
+  /* complaintmanagement */
+  .card__face--front1 {
+    background-image: url(img/projectComplaint.jpg);
+  }
+  
+  .card__face--back1 {
+    background: slateblue;
+    transform: rotateY(180deg);
+  }
+  /* disesseprediction */
+  .card__face--front2 {
+    background-image: url(/img/diseasePrediction.jpg);
+  }
+  
+  .card__face--back2 {
+    background: slateblue;
+    transform: rotateY(180deg);
+  }
+/* examportal */
+  .card__face--front3 {
+    background-image: url(img/examPortal.jpg);
+  }
+  
+  .card__face--back3 {
+    background: slateblue;
+    transform: rotateY(180deg);
+  }
 
+  /* languagesmasters */
+  .card__face--front4 {
+    background-image: url(img/languageMasters.jpg);
+  }
+  
+  .card__face--back4 {
+    background: slateblue;
+    transform: rotateY(180deg);
+  }
 
-
-/* projects */
-
-/* 
-.flip-card {
-  background-color: transparent;
-  width: 300px;
-  height: 300px;
-  perspective: 1000px;
-}
-
-.flip-card-inner {
-  position: relative;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  transition: transform 0.6s;
-  transform-style: preserve-3d;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-}
-
-.flip-card:hover .flip-card-inner {
-  transform: rotateY(180deg);
-}
-
-.flip-card-front, .flip-card-back {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
-.flip-card-front {
-  background-color: #bbb;
-  color: black;
-}
-
-.flip-card-back {
-  background-color: #2980b9;
-  color: white;
-  transform: rotateY(180deg);
-} */
-
-
-
+  /* template */
+  .card__face--front5 {
+    background-image: url(img/Template.jpg);
+  }
+  
+  .card__face--back5 {
+    background: slateblue;
+    transform: rotateY(180deg);
+  }
+  .card__face--front6 {
+    background-image: url(img/cookieWebsite.jpg);
+  }
+  
+  /* cookiewebsite */
+  .card__face--back6 {
+    background: slateblue;
+    transform: rotateY(180deg);
+  }
 /* contactme */
 .box5{
   padding: 65px;

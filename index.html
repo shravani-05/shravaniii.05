@@ -6,6 +6,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"/>
 <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+<link rel="stylesheet/less" type="text/css" href="styles.less" />
+<script src="less.js" type="text/javascript"></script>
 </head>
 <body>
  
@@ -113,14 +115,7 @@ window.addEventListener('scroll', scrollValue);
       <section class="Main-section">
         <div class="Container">
           <div class="js-timeline ag-timeline">
-        
-    
-    
-    
-    
-    
-            
-            <!-- Progress Bar Line Code-->
+             <!-- Progress Bar Line Code-->
             <div class="js-timeline_line ag-timeline_line">
               <div class="js-timeline_line-progress ag-timeline_line-progress"></div>
             </div>
@@ -368,98 +363,67 @@ window.addEventListener('scroll', scrollValue);
     <script  src="./script.js"></script>
     
 <!----------------- projects -------------------->
-<!--     
-    <div class="box4">
-      <p>Projects</p>
-      <div class="grid-container">
-        <div class="grid-item">
-          
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img src="img/complaint.jpg" alt="Avatar" style="width:300px;height:300px;">
-            <p></p>
-          </div>
-          <div class="flip-card-back">
-            <h1>John Doe</h1> 
-            <p>Architect & Engineer</p> 
-            <p><a href="www.google.com">link</a></p>
-          </div>
-        </div>
-      </div>
-        </div>
-        <div class="grid-item">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="img/diseasePrediction.jpg" alt="Avatar" style="width:300px;height:300px;">
-              </div>
-              <div class="flip-card-back">
-                <h1>John Doe</h1> 
-                <p>Architect & Engineer</p> 
-                <p>We love that guy</p>
-              </div>
-            </div>
-          </div></div>
-        <div class="grid-item">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="img/examPortal.jpg" alt="Avatar" style="width:300px;height:300px;">
-              </div>
-              <div class="flip-card-back">
-                <h1>John Doe</h1> 
-                <p>Architect & Engineer</p> 
-                <p>We love that guy</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="img/Template.jpg" alt="Avatar" style="width:300px;height:300px;">
-              </div>
-              <div class="flip-card-back">
-                <h1>John Doe</h1> 
-                <p>Architect & Engineer</p> 
-                <p>We love that guy</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="img/languageMasters.jpg" alt="Avatar" style="width:300px;height:300px;">
-              </div>
-              <div class="flip-card-back">
-                <h1>John Doe</h1> 
-                <p>Architect & Engineer</p> 
-                <p>We love that guy</p>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="grid-item">
-          <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="img/cookieWebsite.jpg" alt="Avatar" style="width:300px;height:300px;">
-              </div>
-              <div class="flip-card-back">
-                <h1>John Doe</h1> 
-                <p>Architect & Engineer</p> 
-                <p>We love that guy</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div> -->
-    
+
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front1">
+
+    </div>
+    <div class="card__face card__face--back1">back</div>
   </div>
+</div>
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front2">
+
+    </div>
+    <div class="card__face card__face--back2">back</div>
+  </div>
+</div>
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front3">
+      
+    </div>
+    <div class="card__face card__face--back3">back</div>
+  </div>
+</div>
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front4">
+      
+    </div>
+    <div class="card__face card__face--back4">back</div>
+  </div>
+</div> <br>
+<div class="scene scene--card" style="margin-left: 26%;;">
+  <div class="card">
+    <div class="card__face card__face--front5">
+      
+    </div>
+    <div class="card__face card__face--back5">back</div>
+  </div>
+</div>
+<div class="scene scene--card">
+  <div class="card">
+    <div class="card__face card__face--front6">
+      
+    </div>
+    <div class="card__face card__face--back6">back</div>
+  </div>
+</div>
+
+<script>
+  var cards = document.querySelectorAll('.card');
+
+[...cards].forEach((card)=>{
+  card.addEventListener( 'click', function() {
+    card.classList.toggle('is-flipped');
+  });
+});
+</script>
+
+<!----------------- contactme -------------------->
   <div class="box5" >
         <div class="container1">
             <div class="row">
