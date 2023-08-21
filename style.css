@@ -86,9 +86,9 @@ li {
 }
 h1 {
   font-size: 5vmin;
-  color: #2c011d;
+  color: #f5dd09;
   text-align: left;
-  
+  font-family: 'Dancing Script';
   font-size: 60px;
   
   margin: 1rem 0 1rem 2rem;
@@ -135,7 +135,7 @@ h1 {
   80.9070%, 94.5814% { content: "Hu"; }
   82.0465%, 93.4419% { content: "Hum"; }
   83.1860%, 92.3023% { content: "Huma"; }
-  84.3256%, 91.1628% { content: "Human."; }
+  84.3256%, 91.1628% { content: "Human"; }
   85.3256%, 91.1628% { content: "Human"; }
 
 }
@@ -147,6 +147,7 @@ h1 {
 
 .typewriter {
   --caret: currentcolor;
+  color: #2c011d;
 }
 
 .typewriter::before {
