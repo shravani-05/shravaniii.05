@@ -54,7 +54,7 @@ li {
   color: black;
   transition: all .5s;
   background-color: rgb(250, 250, 250);
-  background-image: url('https://images.unsplash.com/photo-1690317267093-bc080dbeac5b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDI2fGpyMVhkb1hQblljfHxlbnwwfHx8fHw%3D&auto=format&fit=crop&w=500&q=60');
+  background-image: url(img/whitetext.png);
   background-size: cover;
 
   border-bottom: 1px solid lightgray;
@@ -189,10 +189,10 @@ h1 {
   /* background-color: rgb(115, 113, 109); */
   opacity: 0.9;
 }
-
+/* 
 .box3{
   background-color: #393935;
-}
+} */
 .box4{
   background-image: url('https://www.intelligenthq.com/wp-content/uploads/2020/07/Building-Blockchain-And-AI-Tech-For-Good-APIs-To-Protect-Peoples-Data.jpg');
 }
@@ -249,8 +249,7 @@ img{
 }
 /* skillsSection */
 #skills{
-  background-image: url(https://img.freepik.com/free-photo/stone-texture_1194-6381.jpg?w=2000);
-  background-color: black;
+  background-image: url(img/whi);
   background-size: cover;
   background-position: center;
   text-align: center;
@@ -292,7 +291,7 @@ transition: all .4s ease-out;
 }
 /* resumesection box3*/
 .box3{
-  background-image: url(https://i.pinimg.com/originals/eb/45/9a/eb459a58d47ad73229185871e7901c9a.jpg);
+  background-image: url(img/blacktext.png);
   background-repeat: repeat;
   background-size: cover;
 }
@@ -577,137 +576,145 @@ transition: all .4s ease-out;
 }
 
   /* projects */
-  @import url(https://fonts.googleapis.com/css?family=Montserrat:200);
-  .snip1577 {
-    font-family: 'Montserrat', Arial, sans-serif;
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    margin: 10px;
-    min-width: 230px;
-    max-width: 315px;
-    width: 100%;
-    color: #fff;
-    text-align: left;
-    font-size: 16px;
-    background: #000;
+  .box7 h1{
+    text-align: center ;
+    padding: 80px;
   }
-  
-  .snip1577 *,
-  .snip1577:before,
-  .snip1577:after {
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
-    -webkit-transition: all 0.4s ease;
-    transition: all 0.4s ease;
+  .proj1{
+    margin-top: 5px;
+display:grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(2, 1fr);
+justify-content: center;
+align-items: center;
+row-gap: 0px;
   }
+    /* cardslider */
+::-webkit-scrollbar {
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb {
+  background: #6e93f7;
+  border-radius: 25px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #4070f4;
+}
+.container9 {
+  display: flex;
+  gap: 12px;
+  max-width: 90%;
+  width: 100%;
+ background-image: url(img/blacktext.png);
+  border-radius: 12px;
+  padding: 50px;
+  color: black;
+  scroll-snap-type: x mandatory;
+  overflow-x: scroll;
+  scroll-padding: 30px;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+  margin-left: 5%;
   
-  .snip1577 img {
-    max-width: 100%;
-    backface-visibility: hidden;
-    vertical-align: top;
-  }
+}
+.container9 .card {
+  display: flex;
+  max-width: 500px;
+  flex: 0 0 100%;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  border-radius: 12px;
+  background: rgb(255, 255, 255);
+  /* background-image: url(img/whitetext.png); */
+  scroll-snap-align: start;
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.1);
+}
+.card:hover{
+  box-shadow: gray;
+}
+.card .image {
+  height: 200px;
+  width: 200px;
+  padding: 4px;
+  background: rgb(189, 213, 234);
   
-  .snip1577:before,
-  .snip1577:after {
-    position: absolute;
-    top: 20px;
-    right: 20px;
-    content: '';
-    background-color: #fff;
-    z-index: 1;
-    opacity: 0;
-  }
+ 
+}
+.image img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+ 
+  border: 5px solid #fff;
+}
+.card h2 {
+  margin-top: 25px;
+  color: #333;
+  font-size: 22px;
+  font-weight: 600;
+}
+.card p {
+  margin-top: 4px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #333;
+  text-align: center;
+}
+.box7 button {
+  --border: 1px;    /* the border width */
+  --slant: 0.7em;   /* control the slanted corners */
+  --color: #37E8FC; /* the color */
   
-  .snip1577:before {
-    width: 0;
-    height: 1px;
-  }
-  
-  .snip1577:after {
-    height: 0;
-    width: 1px;
-  }
-  
-  .snip1577 figcaption {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    padding: 15px 20px;
-  }
-  
-  .snip1577 h3,
-  .snip1577 h4 {
-    margin: 0;
-    font-size: 1.1em;
-    font-weight: normal;
-    opacity: 0;
-  }
-  
-  .snip1577 h4 {
-    font-size: .8em;
-    text-transform: uppercase;
-  }
-  
-  .snip1577 a {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    z-index: 1;
-  }
-  
-  .snip1577:hover img,
-  .snip1577.hover img {
-    zoom: 1;
-    filter: alpha(opacity=20);
-    -webkit-opacity: 0.2;
-    opacity: 0.2;
-  }
-  
-  .snip1577:hover:before,
-  .snip1577.hover:before,
-  .snip1577:hover:after,
-  .snip1577.hover:after {
-    opacity: 1;
-    -webkit-transition-delay: 0.25s;
-    transition-delay: 0.25s;
-  }
-  
-  .snip1577:hover:before,
-  .snip1577.hover:before {
-    width: 40px;
-  }
-  
-  .snip1577:hover:after,
-  .snip1577.hover:after {
-    height: 40px;
-  }
-  
-  .snip1577:hover h3,
-  .snip1577.hover h3,
-  .snip1577:hover h4,
-  .snip1577.hover h4 {
-    opacity: 1;
-  }
-  
-  .snip1577:hover h3,
-  .snip1577.hover h3 {
-    -webkit-transition-delay: 0.3s;
-    transition-delay: 0.3s;
-  }
-  
-  .snip1577:hover h4,
-  .snip1577.hover h4 {
-    -webkit-transition-delay: 0.35s;
-    transition-delay: 0.35s;
-  }
-  
+  font-size: 20px;
+  padding: 0.4em 1.2em;
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  color: var(--color);
+  background: 
+     linear-gradient(to bottom left,var(--color)  50%,#0000 50.1%) top right,
+     linear-gradient(to top   right,var(--color)  50%,#0000 50.1%) bottom left;
+  background-size: calc(var(--slant) + 1.3*var(--border)) calc(var(--slant) + 1.3*var(--border));
+  background-repeat: no-repeat;
+  box-shadow:
+    0 0 0 200px inset var(--s,#0000),
+    0 0 0 var(--border) inset var(--color);
+  clip-path: 
+      polygon(0 0, calc(100% - var(--slant)) 0, 100% var(--slant),
+              100% 100%, var(--slant) 100%,0 calc(100% - var(--slant))
+             );
+  transition: color var(--t,0.3s), background-size 0.3s;
+}
+button:focus-visible {
+  outline-offset: calc(-1*var(--border));
+  outline: var(--border) solid #000c;
+  clip-path: none;
+  background-size: 0 0;
+}
+button:hover,
+button:active{
+  background-size: 100% 100%;
+  color: #fff;
+  --t: 0.2s 0.1s;
+}
+button:active {
+  --s: #0005;
+  transition: none;
+}
+.container9 a{
+  text-decoration: none;
+  color: inherit;
+}
+
 /* contactme */
 .box5{
   padding: 65px;
-  background-color: rgb(38, 37, 37);
+  /* background-color: rgb(38, 37, 37); */
+  background-image: url(img/blacktext.png);
   color: white;
   font-family: 'Times New Roman', Times, serif;
 }
