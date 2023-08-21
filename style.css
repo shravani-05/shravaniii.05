@@ -741,6 +741,10 @@ button:active {
   text-decoration: none;
   color: white;
 }
+.box5 h2{
+  font-family: 'Dancing Script';
+  font-size: 60px;
+}
 .row .column{
  
   text-align: right;
