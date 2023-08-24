@@ -12,9 +12,11 @@
 <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Kaushan Script' rel='stylesheet'>
 <link href='https://fonts.googleapis.com/css?family=Redressed' rel='stylesheet'>
+<script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
-<link rel="stylesheet/less" type="text/css" href="styles.less" />
-<script src="less.js" type="text/javascript"></script>
+
+
+
 </head>
 <body>
  
@@ -363,64 +365,6 @@ window.addEventListener('scroll', scrollValue);
 <div id="projects" class="box7">
 <div class="TopHeads"><h1>Projects</h1></div>
 
-<section class="container9">
-  <div class="card">
-    <div class="image">
-     <img src="https://pvvnl.org/wp-content/uploads/2022/12/Integrated-Grievances-Redress-System.jpg" alt="" />
-    </div>
-    <h2><u>Complaint Management System</u></h2>
-    <p>A system made for college that takes complaint of any issue faced byt the student in college campus.</p>
-   <br> <button><a href="https://github.com/shravani-05/ComplaintManagementSystem" style="text-decoration: no;">Visit GitHub</a></button>
-  </div>
-  <div class="card">
-    <div class="image">
-     <img src="https://partheniumprojects.com/wp-content/uploads/2018/12/heart-disease-prediction-3.png" alt="" />
-    </div>
-    <u><h2>Multiple Disease Prediction System</h2></u>
-    <p>A system based on Naves-Bayes Algorithm, which takes multiple symptoms as and predicts the disease.</p>
-   <br> <button><a href="https://github.com/shravani-05/MultipleDiseasePredictionSystem" style="text-decoration: no;">Visit GitHub</a></button>
-  </div>
-  <div class="card">
-    <div class="image">
-     <img src="https://goschooler.com/wp-content/uploads/2021/06/Online-Exam-Portals.png" alt="" />
-    </div>
-    <u><h2>An Exam Portal</h2></u>
-    <p>A system which conducts exams and evaluates the candidate and shows them results.</p>
-   <br> <button><a href="https://github.com/shravani-05/ExamPortal" style="text-decoration: no;">Visit GitHub</a></button>
-  </div>
-  <div class="card">
-    <div class="image">
-     <img src="https://www.zdnet.com/a/img/resize/0a6b0be2f543ddbf313fc83a706b807b77c3c202/2021/07/19/8a337c80-5ed6-43a1-98fb-b981d420890f/programming-languages-shutterstock-1680857539.jpg?auto=webp&fit=crop&height=900&width=1200" alt="" />
-    </div>
-    <u><h2>Language Masters</h2></u>
-    <p>A Parallax website of an intoduction to computer programming</p>
-   <br> <button><a href="https://github.com/shravani-05/LanguageMasters" style="text-decoration: no;">Visit GitHub</a></button>
-  </div>
-  <div class="card">
-    <div class="image">
-     <img src="https://media.licdn.com/dms/image/C4E0BAQHTBNtZ-CC12w/company-logo_200_200/0/1519856255250?e=2147483647&v=beta&t=EjoZvmOqdhoVF6dImCk9L4vi8AcmpHG35NpXoEphaak" alt="" />
-    </div>
-    <u><h2>An Eductech Website</h2></u>
-    <p>A prototype made for an edutech coaching class.</p>
-   <br> <button><a href="https://github.com/shravani-05/templete" style="text-decoration: no;">Visit GitHub</a></button>
-  </div>
-  <div class="card">
-    <div class="image">
-     <img src="https://recipetineats.com/wp-content/uploads/2019/12/Christmas-Cookies-Sugar-Cookies_7.jpg" alt="" />
-    </div>
-    <u><h2>A Cookie Website</h2></u>
-    <p>A Cookie Website template for a shop.</p>
-   <br> <button><a href="https://github.com/shravani-05/Cookie-Website" style="text-decoration: no;">Visit GitHub</a></button>
-  </div>
-  
-</section>
-<br>
-
-</div>
-
-
-
-
 
 
 <!----------------- contactme -------------------->
@@ -445,16 +389,41 @@ window.addEventListener('scroll', scrollValue);
                </div>
               </div>
               <div class="column" style="text-align: left;">
-                <form action="index.html">
-                  <br>
-                  <label for="fname"></label>
-                  <input type="text" id="fname" name="firstname" placeholder="Your name"><br>
-                  <label for="email"></label>
-                  <input type="text" id="email" name="email" placeholder="Email"><br>
-                  <label for="subject"></label>
-                  <textarea id="subject" name="subject" placeholder="Any message  " style="height:100px"></textarea><br>
-                  <input type="submit" value="Submit">
-                </form>
+                
+                
+                <input type="text" id="sendername" placeholder="Enter your name"> <br>
+        
+                <input type="text" id="to" placeholder="Email Id"> <br>
+                
+                
+                <input type="text" id="replyto" placeholder="Where are you from"> <br>
+            
+                <textarea id="message" cols="40" rows="8"></textarea> <br>
+                <button onclick = "sendMail();">Send</button>
+            
+                <script>
+                  function sendMail(){
+                    (function(){
+                      emailjs.init("ivwBqX_VfcVoJ_8nt"); // Account Public Key
+                    })();
+            
+                    var params = {
+                      sendername: document.querySelector("#sendername").value,
+                      to: document.querySelector("#to").value,
+                      replyto: document.querySelector("#replyto").value,
+                      message: document.querySelector("#message").value,
+                    };
+            
+                    var serviceID = "service_4t4uj0k"; // Email Service ID
+                    var templateID = "template_d3s9t5q"; // Email Template ID
+            
+                    emailjs.send(serviceID, templateID, params)
+                    .then( res => {
+                        alert("Email sent successfully!!")
+                    })
+                    .catch();
+                  }
+                </script>
               </div>
             </div>
           </div>
